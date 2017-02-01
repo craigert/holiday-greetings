@@ -1,0 +1,57 @@
+/* CSS Select Images */
+
+.selectImage {
+	display: none;
+	position: relative;
+}
+
+table#main {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.selectBusinessUnit img {
+	border: 1px solid #222222;
+	padding: 2px;
+	background: #ffffff;
+}
+
+table#main td {
+	padding: 5px 8px 9px;
+	background: #ffffff;
+}
+
+table#main td:hover {
+	color: #ffffff;
+}
+
+table#main td.imageSelection {
+	padding: 5px 8px 9px;
+	background: #ffffff;
+}
+
+table#main td.imageSelection:hover {
+	cursor: pointer;
+	background: #888888;
+	color: #ffffff;
+}
+
+table#main td.notselected {
+	padding: 5px 8px 9px;
+	background: #888888;
+	color: #ffffff;
+}
+
+table#main td.notselected:hover {
+	cursor: pointer;
+}
+
+table#main td.selected {
+	padding: 5px 8px 9px;
+	background: #888888;
+	color: #ffffff;
+}
+
+table#main td.selected:hover {
+	cursor: pointer;
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<title>LANDESK Corporate Marketing Request Form</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<meta name="Copyright" content="" />
+<link rel="shortcut icon" href="images/favicons.png" />
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/calendar.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/ui.theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/form.css"/>
+
+<!-- Latest jQuery Build -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.10.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+
+<!-- Configure form on page load -->
+<script type="text/javascript">
+$(window).load(function() {
+	
+	// Set focus on name field
+	// $('#fullName').focus();
+	
+	// Check No Go Live Date by default
+	$('input:radio[name="isGoLive"]').filter('[value="No"]').attr('checked', true);
+	
+	// Hide Go Live Datepicker control
+	$('div#goLiveDateControl').hide();
+
+});
+</script>
+<script type="text/javascript">
+
+function clearFileInputField(tagId) {
+    document.getElementById(tagId).innerHTML =
+        document.getElementById(tagId).innerHTML;
+    }
+
+</script>
+</head>
+
+<body>
+<div id="wrapper-shadow"> 
+    
+    <!-- Begin Wrapper -->
+    <div id="wrapper"> 
+        
+        <!-- Begin Header -->
+        <div id="header">
+			<p>LANDESK 2016 Holiday Greetings E-card Generator</p>
+		</div>
+        <!-- End Header --> 
+        
+        <!-- Begin Content -->
+        <div id="main">
+            <div id="content">
+                <div class="callout">
+        
+        <h2 style="color: rgb(0, 66, 117); font-family: Arial,Helvetica,sans-serifl; text-align: left; padding: 0px; margin-bottom: 16px; font-size: 24px; margin-left: 3px;">Your email has been sent</h2>
+				</div>
+                <div class="clear"></div>
+            </div>
+            <!-- End Content --> 
+            
+        </div>
+        <!-- End Wrap --> 
+        
+    </div>
+</div>
+
+<!-- Begin Footer -->
+<div id="footerwrapper">
+    <div id="footer">
+        <p class="copyright">Copyright &copy; LANDESK Corporate Marketing 2016</p>
+    </div>
+</div>
+<!-- End Footer --> 
+
+<script type="text/javascript" src="js/scripts.js"></script> 
+
+<!-- Validate Form --> 
+<script type="text/javascript" src="js/validate.js"></script>
+</body>
+</html>
