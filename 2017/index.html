@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+	<title>2017 Holiday Greetings | Ivanti</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+	<meta name="Copyright" content="" />
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/form.css" />
+
+	<!-- Latest jQuery Build -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    
+    <!-- Validate Form -->
+	<script type="text/javascript" src="js/validate.js"></script>
+
+	<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+	
+	<script>
+		YUI().use('editor-inline', function(Y) {
+			var editor = new Y.InlineEditor({
+			
+				content: '<p>Dear Customer,</p><p>Enter desired message here..........</p><p>Salutation</p><p>Signature</p>',
+				handleSubmit: true
+				
+			});
+
+			//Add the BiDi plugin
+			editor.plug(Y.Plugin.EditorBidi);
+
+			//Focusing the Editor when ready
+			editor.on('ready', function() {
+				editor.focus();
+			});
+
+			//Rendering the Editor.
+			editor.render('#customGreetings');
+
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrapper-shadow">
+
+		<!-- Begin Wrapper -->
+		<div id="wrapper">
+
+			<!-- Begin Header -->
+			<div id="header">
+                <div class="logo"><img src="https://static.ivanti.com/sites/marketing/media/images/logos/ivanti-logo-header-white.svg" alt="ivanti" width="200" height="72" /></div><p>2017 Holiday Greetings E-card Generator</p>
+			</div>
+			<!-- End Header -->
+			
+			<!-- Begin Content -->
+			<div id="main">
+				<div id="content">
+					<div class="callout" id="emailContent">
+						<p style="margin-bottom: 16px;">Fill out the form and then add a custom message to the card below to send a custom holiday greeting!</p>
+						<br />
+						<form id="contact_form" action="filebin/process.php" method="post" name="eventForm" enctype="multipart/form-data" onsubmit="document.getElementById('Send').disabled = true">
+							<div class="formSection">
+								<table border="0" cellpadding="2" cellspacing="2" width="716">
+									<tr valign="top">
+										<td align="right" valign="top" class="form"><label for="name">From:<br /><span style="font-size: 10px; font-style: italic; font-weight: normal;">(i.e. Ivanti, etc.)</span></label></td>
+										<td align="left" class="form">
+											<input id="name" maxlength="100" name="name" size="30" type="text" style="margin: 0px 0px 10px 10px;" />
+										</td>
+									</tr>
+									<tr valign="top">
+										<td align="right" valign="top" class="form"><label for="email">From Email:</label><br /><span style="font-size: 10px; font-style: italic; font-weight: normal;">(i.e. ivanti.com)</span></td>
+										<td align="left" class="form">
+											<input id="email" maxlength="100" name="email" size="30" type="text" style="margin: 0px 0px 10px 10px;" />
+										</td>
+									</tr>
+									<tr valign="top">
+										<td align="right" valign="top" class="form"><label for="emailRecipients">List of Recipients: <span style="font-size: 10px; font-style: italic; font-weight: normal;">(separated by commas)</span></label></td>
+										<td align="right" class="form">
+											<textarea id="emailRecipients" name="emailRecipients" cols="30"></textarea>
+										</td>
+									</tr>
+								</table>
+								<br /><br />
+						
+								<!-- Wrapper -->
+								<table cellpadding="0" cellspacing="0" align="center" style="width: 100%">
+									<tr>
+										<td align="center">
+											<table width="600" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+
+												<!-- Start Header -->
+												<tr>
+													<td align="center">
+														<div class="headerAdjustHeight" style="background: #db2c27">
+                                                            <img width="600" src="images/top-card.jpg" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" /><br /><br />
+														</div>
+													</td>
+												</tr>
+												<!-- End Header -->
+
+												<!-- Start Content -->
+												<tr>
+													<td align="center" style="padding: 0px; background: #db2c27;">
+														<table width="600" cellpadding="0" cellspacing="0" align="center" class="deviceWidth main-message" style="color: #ffffff">
+															<tr>
+																<td style="padding:0px 32px; text-align: left; vertical-align: top; color: #ffffff">
+																	<div id="customGreetings" name="customGreetings" tabindex="1">
+																	</div>
+																	<textarea id="customMessage" name="customMessage" style="display: none"></textarea>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- End Content -->
+
+												<!-- Start Footer -->
+												<tr>
+													<td align="center" valign="top">
+														<div style="margin:0; width: 600px;" class="footerAdjustHeight">
+															<img width="600" src="images/bottom-card.jpg" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" />
+														</div>
+													</td>
+												</tr>
+												<!-- End Footer -->
+
+											</table>
+											<br /><br />
+										</td>
+									</tr>
+								</table>
+								<!-- End Wrapper -->
+
+							</div>
+							
+							<div class="formSection formSubmit">
+								<div style="float: left;">
+									<input name="Send" class="frmSubmit" type="submit" id="Send" value="Submit" />
+								</div>
+								<img src="images/ajax-loader.gif" style="display: none;" id="loading_image" alt="ajaxloader" />
+							</div>
+						</form>
+					</div>
+					<div class="clear"></div>
+				</div>
+            </div>
+            <!-- End Content -->
+            
+		</div>
+        <!-- End Wrap -->
+        
+	</div>
+
+	<!-- Begin Footer -->
+	<div id="footerwrapper">
+		<div id="footer">
+			<p class="copyright">&copy; 2017 Ivanti</p>
+		</div>
+	</div>
+	<!-- End Footer -->
+
+</body>
+</html>
