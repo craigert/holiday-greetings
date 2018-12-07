@@ -38,7 +38,7 @@ $htmlBody = '<body marginwidth="0" marginheight="0" yahoo="fix" style="backgroun
 					<tr>
 				        <td align="center">
 				            <div class="headerAdjustHeight" style="background: #E12820;">
-                                <img width="600" src="http://landing.landesk.com/holiday-greetings-2018/images/christmas-greetings-new.gif" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" />
+                                <img width="600" src="http://go.ivanti.com/rs/635-QZI-186/images/christmas-greetings-new.gif" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" />
 							</div>
 						</td>
 					</tr>
@@ -48,7 +48,7 @@ $htmlBody = '<body marginwidth="0" marginheight="0" yahoo="fix" style="backgroun
 					<tr>
 				        <td align="center">
 				            <div style="background: #E12820;">
-                                <img width="600" src="http://landing.landesk.com/holiday-greetings-2018/images/mid-card-message.png" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" />
+                                <img width="600" src="http://go.ivanti.com/rs/635-QZI-186/images/mid-card-message.png" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" />
 							</div>
 						</td>
 					</tr>
@@ -78,7 +78,7 @@ $htmlBody = '<body marginwidth="0" marginheight="0" yahoo="fix" style="backgroun
 				   	<tr>
 						<td align="center" valign="top">
 							<div style="mso-table-lspace:0; mso-table-rspace:0; margin:0; width: 600px; background: #E12820;" class="footerAdjustHeight">
-								<img width="600" src="http://landing.landesk.com/holiday-greetings-2018/images/footer.png" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" />
+								<img width="600" src="http://go.ivanti.com/rs/635-QZI-186/images/footer.png" alt="" border="0" style="width: 600px; max-width: 100%;" class="deviceWidth" />
 							</div>
 						</td>
 					</tr>
@@ -93,7 +93,7 @@ $htmlBody = '<body marginwidth="0" marginheight="0" yahoo="fix" style="backgroun
 </body>';
 $htmlFooter = '</html>';
 
-require('C:\inetpub\campaigns\landing\holiday-greetings-2018\filebin\class.phpmailer.php');
+require('C:\inetpub\sesame\holiday-greetings-2018\filebin\class.phpmailer.php');
 
 $numEmailsSent = 1;
 
@@ -135,5 +135,5 @@ foreach($emailList as $addr){
 	}
 }
 
-Header("Location: http://landing.landesk.com/holiday-greetings-2018/thankyou.html");
+Header("Location: http://sesame.ivanti.com/holiday-greetings-2018/thankyou.html");
 ?>
